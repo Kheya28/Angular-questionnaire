@@ -1,0 +1,126 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<div>
+  <div>
+
+
+    <div class="section1 no gutters">
+
+      <div class="upper">
+        <div class="dropdown">
+          <button style="
+              background-color: white;
+              font-size: x-large;
+              color: rgb(58, 53, 53);
+            " class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+            <i class="fa fa-info-circle"></i>
+            Intern Exam
+            <span class="caret"></span>
+          </button>
+          <div ngDropdown class="dropdown-content">
+            <a class="dropdown-item" href="#">
+              <i class="fa fa-home"></i> My account
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fa fa-address-book"></i> About
+            </a>
+            <a class="dropdown-item" [routerLink]="[ '/', 'login' ]">
+
+              <i class="fa fa-bell"></i> Logout</a>
+          </div>
+        </div>
+
+        <div>
+          <button class="block">Form</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div fxLayout="column" fxLayoutAlign=" none">
+      <div>
+        <h1>FORMS</h1>
+        <p style="font-size: medium; margin-top: -10px">
+          Create and manage forms
+        </p>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <div fxFlex="80">
+          <div class="box">
+            <i class="fa fa-search"></i>
+            <input
+              formControlName="search"
+              matInput
+              placeholder="search form"
+            />
+          </div>
+        </div>
+        <div fxFlex="20">
+          <div><button class="add_button">ADD FORM</button></div>
+        </div>
+      </div>
+
+      <div></div>
+    </div> -->
+
+
+    <div style="padding-left: 5%; padding-top: 5%;" fxLayout="column" fxLayoutAlign=" none">
+      <div>
+        <h1>FORMS</h1>
+        <p style="font-size: medium;">
+          Create and manage forms
+        </p>
+      </div>
+
+      <div style="padding-right: 5%;" fxLayout="row" fxLayoutAlign="start center">
+
+        <div fxFles="80">
+          <form class="example-form">
+
+            <mat-form-field class="example-full-width" appearance="outline">
+              <i style="font-size: 20px; padding-bottom: 22px;" matPrefix class="fa fa-search"></i>
+              <input style="padding-left: 2%;" matInput placeholder="Search">
+            </mat-form-field>
+          </form>
+        </div>
+
+
+
+
+        <div style="margin-left: 20px; padding-bottom: 20px; " fxFlex="10">
+          <button (click)="addForm()" class=" add_button" style="width: max-content;">ADD FORM</button>
+        </div>
+      </div>
+
+
+
+
+      <div>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table">
+
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Created on </th>
+            <td mat-cell *matCellDef="let element"> {{element.created_on}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="showDetails(row)"></tr>
+        </table>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

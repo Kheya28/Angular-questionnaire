@@ -1,0 +1,96 @@
+.section1{
+    background-color:#6497c4;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width:70%;
+    float:left;
+    height:100vh;
+    
+    box-sizing: border-box;
+    margin:0;
+    padding:0;    
+}
+
+.section2{
+  text-align: center;
+  background-color:#f8f7f2;
+  width:30%;
+  float:left;
+  height:100vh;
+  margin:0;
+  padding:0;
+box-sizing: border-box;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.vertical-center1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+button { 
+    width: 80%; 
+    margin: 8px 0;
+    padding: 7px 15px; 
+    display: inline-block; 
+    border: 1px solid rgb(3, 12, 3); 
+    box-sizing: border-box; 
+    
+} 
+
+
+  mat-card {
+    max-width: 600px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 600px;
+  }
+  
+  .header{
+    text-align: center;
+  
+  }
+  .full-width {
+    width: 80%;
+  }
+  
+  .button-row {
+    padding-top: 5px;
+  }
+  
+  .button-row a {
+    margin-right: 8px;
+    text-align: center;
+  }
+  
+  .forget-password{
+    padding-left: 0px;
+  }
+  
+  .emailInput{
+    padding-top: 10px;
+  }
+  
+  .contentBody {
+    padding: 60px 1rem;
+    background :#1b6ca8;
+    display: block;
+  }
+  
+  .aLink{
+    float: right;
+    padding-right: 60px;
+    text-decoration: none;
+  }

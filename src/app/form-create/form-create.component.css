@@ -1,0 +1,58 @@
+.reduce-width {
+    width: 700px;
+    
+    color: aqua;
+    
+  }
+
+.body {
+    background: black;
+}
+.section1 {
+  background-color: #fbfcfd;
+  text-align: center;
+
+  top:15%;
+  width: 57%;
+  left: 30%;
+  height: 30vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* box-shadow: 0 0 10px rgba(0.6, 0, 0, 0);   */
+  border: solid 0.1em;
+  border-color: #2f2f30;
+}
+
+
+.section2 {
+    /* box-shadow: 0 -1px 0 rgb(187, 18, 18);
+    border-left: 7px solid violet; */
+    background-color: #FDFEFF;
+    text-align: center;
+  
+    top:18%;
+    width: 57%;
+    left: 30%;
+    height: 60vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* box-shadow: 0 0 10px rgba(0.6, 0, 0, 0);   */
+    border: solid 0.1em;
+  
+  }
+
+  .section3 {
+
+  
+    top:21%;
+    width: 57%;
+    left: 30%;
+    height: 40vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+   
+  
+  }
